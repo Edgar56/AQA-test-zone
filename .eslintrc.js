@@ -9,5 +9,6 @@ module.exports = {
     rules: {
         quotes: [`error`, `backtick`],
         semi: [`error`, `always`],
+        "eol-last": ['error', 'always'],
     },
 };

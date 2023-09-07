@@ -3,11 +3,15 @@ module.exports = {
         node: true,
         es2021: true,
     },
-    extends: [`eslint-recommended`, `plugin:@typescript-eslint/recommended`],
+    extends: [
+        "plugin:@typescript-eslint/recommended",
+        "plugin:playwright/recommended"
+    ],
     parser: `@typescript-eslint/parser`,
     plugins: [`@typescript-eslint`],
+    root: true,
+    ignorePatterns: ['./playwright.config.ts'],
     rules: {
-        quotes: [`error`, `backtick`],
         semi: [`error`, `always`],
         "eol-last": ['error', 'always'],
     },

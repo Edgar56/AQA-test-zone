@@ -7,6 +7,7 @@
 2. Navigate to folder and install npm packages using:
 
 ``npm install``
+
 3. For first time installation run below command to download required browsers
 
 ``npx playwright install``

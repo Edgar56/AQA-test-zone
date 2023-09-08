@@ -6,7 +6,8 @@
   "scripts": {
     "test": "npx playwright test",
     "lint": "eslint . --ext .ts",
-    "lint:fix": "eslint . --fix "
+    "lint:fix": "eslint . --fix ",
+    "report": "allure generate ./test-results/allure-results --clean -o ./test-results/allure-report && allure open ./test-results/allure-report"
   },
   "repository": {
     "type": "git",

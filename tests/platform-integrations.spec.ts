@@ -21,7 +21,7 @@ test.describe('Platform Integrations', () => {
     ])
     expect(await page.locator('.card').allTextContents()).toHaveLength(4)
   })
-  test('Should open third value', async ({ page }) => {
+  test('Should open BIGCOMMERCE card', async ({ page }) => {
     await openCard(page, 'BIGCOMMERCE')
     await expect(page.getByRole('heading', { name: 'BigCommerce' })).toHaveText(
       'BigCommerce'
